@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-border: #1e2937;
+  --muted: #475569;
+  --primary: #1e3a8a;
+  --primary-hover: #1e40af;
+  --accent: #b45309;
+  --accent-hover: #9a3412;
+  --success: #14532d;
+  --warning: #b45309;
+  --danger: #b91c1c;
+  --blue: #1e3a8a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Inter, system-ui, Arial, sans-serif;
+  font-feature-settings: "tnum";
+}
+
+.saas-page {
+  min-height: 100vh;
+  background: var(--background);
+}
+
+.saas-card {
+  background: var(--card);
+  border: 2px solid var(--card-border);
+  border-radius: 12px;
+  box-shadow:
+    0 10px 15px -3px rgb(15 23 42 / 0.15),
+    0 4px 6px -4px rgb(15 23 42 / 0.1);
+}
+
+.metric-card {
+  background: #ffffff;
+  border: 2px solid #1e2937;
+  border-radius: 12px;
+  padding: 24px 20px;
+  box-shadow: 0 10px 15px -3px rgb(15 23 42 / 0.15);
+}
+
+.metric-label {
+  font-size: 0.95rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+
+.metric-value {
+  margin-top: 8px;
+  font-size: 2.85rem;
+  font-weight: 950;
+  letter-spacing: -0.05em;
+}
+
+.btn-primary,
+.btn-accent {
+  border-radius: 9999px;
+  font-weight: 900;
+  padding: 14px 28px;
+  box-shadow: 0 6px 8px -2px rgb(180 83 9 / 0.4);
+}
+
+.btn-primary:hover,
+.btn-accent:hover {
+  transform: translateY(-2px);
+}
+
+header h2 {
+  font-size: 3.4rem;
+  font-weight: 950;
+  letter-spacing: -0.06em;
+  line-height: 1.05;
+}
+
+.lead-card {
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.lead-card:hover,
+.lead-card-active {
+  border-color: #b45309;
+  box-shadow: 0 10px 15px -3px rgb(180 83 9 / 0.2);
+}
+
+.badge {
+  font-weight: 900;
+}
+
+/* Rugged high-contrast adjustments */
+.text-slate-950 {
+  color: #0f172a;
+}
+
+.bg-blue-800 {
+  background-color: #1e3a8a;
+}
+
+.bg-blue-950 {
+  background-color: #0f172a;
+}
+
+.text-emerald-700,
+.text-emerald-800 {
+  color: #14532d;
+}
+
+.bg-emerald-600,
+.bg-emerald-700 {
+  background-color: #14532d;
+}

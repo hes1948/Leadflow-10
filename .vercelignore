@@ -1,0 +1,4 @@
+
+# Keep local environment files off deployment uploads
+.env
+.env.*
